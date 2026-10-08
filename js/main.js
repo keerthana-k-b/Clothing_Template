@@ -1013,158 +1013,34 @@ function initReelsHoverPreview() {
  * Controls, sound on, Esc to close, click outside to close, prev/next arrows,
  * WhatsApp Enquire link, and only one video playing at a time.
  */
+/**
+ * Reels Card Click -> Open Instagram in new tab
+ */
 function initReelsModal() {
-  const modal = document.getElementById('reelModal');
-  const modalVideo = document.getElementById('reelModalVideo');
-  const modalTitle = document.getElementById('reelModalTitle');
-  const modalCategory = document.getElementById('reelModalCategory');
-  const modalPrice = document.getElementById('reelModalPrice');
-  const modalEnquireBtn = document.getElementById('reelModalEnquireBtn');
-  const closeBtn = document.getElementById('reelModalClose');
-  const prevBtn = document.getElementById('reelModalPrev');
-  const nextBtn = document.getElementById('reelModalNext');
-
-  if (!modal || !modalVideo) return;
-
-  // Collect reel data from cards on page
   const cards = Array.from(document.querySelectorAll('.reel-card'));
   if (!cards.length) return;
 
-  const reelsData = cards.map(c => {
-    const posterImg = c.querySelector('.reel-card-poster');
-    return {
-      video: c.dataset.video || '',
-      poster: posterImg ? posterImg.getAttribute('src') || '' : '',
-      title: c.dataset.title || 'Your Brand Showcase',
-      category: c.dataset.category || 'Contemporary Fashion',
-      price: c.dataset.price || '',
-    };
-  });
-
-  let currentReelIndex = 0;
-
-  const loadReel = (index) => {
-    currentReelIndex = index;
-    const item = reelsData[currentReelIndex];
-    if (!item) return;
-
-    // Pause all preview videos on cards
-    document.querySelectorAll('.reel-card-video').forEach(v => {
-      v.pause();
-      const parent = v.closest('.reel-card');
-      if (parent) parent.classList.remove('is-previewing');
-    });
-
-    // Set modal video & un-mute for full player experience
-    modalVideo.pause();
-    if (item.poster) {
-      modalVideo.poster = item.poster;
-    }
-    modalVideo.src = item.video;
-    modalVideo.muted = false;
-    modalVideo.load();
-
-    if (modalTitle) modalTitle.textContent = item.title;
-    if (modalCategory) modalCategory.textContent = item.category;
-    if (modalPrice) modalPrice.textContent = item.price;
-
-    if (modalEnquireBtn) {
-      const waMsg = encodeURIComponent(`Hello Your Brand, I would like to enquire about the ${item.title} (${item.price}) from your Watch & Shop showcase.`);
-      modalEnquireBtn.href = `https://wa.me/919000000000?text=${waMsg}`;
-    }
-
-    const playPromise = modalVideo.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {});
-    }
-  };
-
-  const openModal = (index) => {
-    loadReel(index);
-    modal.classList.add('open');
-    document.body.classList.add('modal-open', 'reel-modal-open');
-    document.body.style.overflow = 'hidden';
-  };
-
-  const closeModal = () => {
-    modalVideo.pause();
-    modalVideo.removeAttribute('src');
-    modalVideo.load();
-    modal.classList.remove('open');
-    document.body.classList.remove('modal-open', 'reel-modal-open');
-    document.body.style.overflow = '';
-  };
-
-  const showPrevReel = () => {
-    const nextIdx = (currentReelIndex - 1 + reelsData.length) % reelsData.length;
-    loadReel(nextIdx);
-  };
-
-  const showNextReel = () => {
-    const nextIdx = (currentReelIndex + 1) % reelsData.length;
-    loadReel(nextIdx);
-  };
-
-  // Mobile Touch Swipe Handling to move between reels
-  let touchStartX = 0;
-  let touchEndX = 0;
-  modal.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-  }, { passive: true });
-
-  modal.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    const diff = touchEndX - touchStartX;
-    if (diff < -45) {
-      showNextReel();
-    } else if (diff > 45) {
-      showPrevReel();
-    }
-  }, { passive: true });
-
-  // Card click triggers
-  cards.forEach((card, idx) => {
-    card.addEventListener('click', (e) => {
-      // If clicking enquire button directly, let it open WhatsApp and do not open modal
-      if (e.target.closest('.reel-enquire-btn')) {
-        return;
+  cards.forEach((card) => {
+    const openInstagram = () => {
+      const instaLink = document.querySelector('a[href*="instagram.com"]');
+      if (instaLink && instaLink.href) {
+        window.open(instaLink.href, '_blank', 'noopener');
       }
-      openModal(idx);
+    };
+
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.reel-enquire-btn')) return;
+      openInstagram();
     });
 
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         if (!e.target.closest('.reel-enquire-btn')) {
           e.preventDefault();
-          openModal(idx);
+          openInstagram();
         }
       }
     });
-  });
-
-  // Modal Controls
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
-  if (prevBtn) prevBtn.addEventListener('click', showPrevReel);
-  if (nextBtn) nextBtn.addEventListener('click', showNextReel);
-
-  // Click outside dialog to close
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
-
-  // Keyboard navigation: Esc, Left, Right
-  document.addEventListener('keydown', (e) => {
-    if (!modal.classList.contains('open')) return;
-
-    if (e.key === 'Escape') {
-      closeModal();
-    } else if (e.key === 'ArrowLeft') {
-      showPrevReel();
-    } else if (e.key === 'ArrowRight') {
-      showNextReel();
-    }
   });
 }
 
