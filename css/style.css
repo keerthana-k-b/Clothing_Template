@@ -6988,3 +6988,15 @@ body:has(.search-modal-overlay.open) .floating-whatsapp {
     transition: none !important;
   }
 }
+
+/* ==========================================================================
+   Wishlist Page Extra Styles
+   ========================================================================== */
+.wishlist-subtitle {
+  margin-bottom: 0;
+}
+
+.wishlist-empty-btn {
+  text-decoration: none;
+}
+
