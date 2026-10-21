@@ -1314,6 +1314,58 @@ function initCarouselAutoAdvance() {
       }
     }
   });
+
+  // 6. New Launch Tilted Stack Auto-Rotate (3500ms cycle)
+  const stackWrapper = document.querySelector('.tilted-stack-wrapper');
+  if (stackWrapper) {
+    let isSwapped = false;
+    let cardTimer = null;
+    let isHovered = false;
+
+    const rotateCards = () => {
+      isSwapped = !isSwapped;
+      stackWrapper.classList.toggle('is-swapped', isSwapped);
+    };
+
+    const startTimer = () => {
+      stopTimer();
+      cardTimer = setInterval(() => {
+        if (!isHovered && !document.hidden && !isAnyOverlayOpen()) {
+          rotateCards();
+        }
+      }, 3500);
+    };
+
+    const stopTimer = () => {
+      if (cardTimer) {
+        clearInterval(cardTimer);
+        cardTimer = null;
+      }
+    };
+
+    // Pause only when hovering directly over the card stack
+    stackWrapper.addEventListener('mouseenter', () => { isHovered = true; });
+    stackWrapper.addEventListener('mouseleave', () => { isHovered = false; });
+
+    // Touch/click to swap immediately and reset timer
+    stackWrapper.addEventListener('click', () => {
+      rotateCards();
+      startTimer();
+    });
+
+    // IntersectionObserver so auto-rotation only runs when cards are visible
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startTimer();
+        } else {
+          stopTimer();
+        }
+      });
+    }, { threshold: 0.15 });
+
+    cardObserver.observe(stackWrapper);
+  }
 }
 
 
