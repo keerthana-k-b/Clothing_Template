@@ -7,12 +7,12 @@
 const CATEGORIES = [
   { slug: 'all', name: 'All Collections', desc: 'Complete contemporary fashion & bespoke apparel' },
   { slug: 'ethnic-wear', name: 'Ethnic Wear', desc: 'Handcrafted traditional silhouettes & festive weaves' },
-  { slug: 'western-wear', name: 'Western Wear', desc: 'Tailored suits, evening dresses & modern silhouettes' },
+  { slug: 'western-wear', name: 'Western Wear', desc: 'Tailored separates, dresses & modern silhouettes' },
   { slug: 'occasion-wear', name: 'Occasion Wear', desc: 'Statement ensembles & celebratory evening wear' },
   { slug: 'festive-collection', name: 'Festive Collection', desc: 'Rich textures, festive palettes & artisanal craft' },
   { slug: 'casual-wear', name: 'Casual Wear', desc: 'Everyday luxury, breathable coordinates & essentials' },
   { slug: 'new-arrivals', name: 'New Arrivals', desc: 'Fresh seasonal drops & contemporary edits' },
-  { slug: 'artisanal-craft', name: 'Artisanal Craft', desc: 'Hand embroidery, detailed beadwork & textures' },
+  { slug: 'artisanal-craft', name: 'Artisanal Craft', desc: 'Hand embroidery, intricate needlework & weaves' },
   { slug: 'signature-series', name: 'Signature Series', desc: 'Exclusive house archives & tailored capsule pieces' }
 ];
 
@@ -22,135 +22,139 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-01',
-    name: 'Aurelia Crimson Silk Kurta Set',
+    name: 'Kaveri Ivory & Crimson Kanjivaram Silk Saree',
     category: 'ethnic-wear',
     categoryName: 'Ethnic Wear',
     price: '₹18,500',
     badge: 'Best Seller',
     images: [
       'assets/images/collection-01.webp',
-      'assets/images/hero-03.webp',
-      'assets/images/story-04.webp'
+      'assets/images/product-09.webp',
+      'assets/images/product-18.webp'
     ],
-    description: '(Sample specification) Pure mulberry silk kurta set handwoven with subtle zari motifs along the neckline and cuffs. Paired with tailored cigarette trousers and a coordinating sheer organza dupatta.',
-    fabric: 'Pure Mulberry Silk & Muted Gold Zari',
-    work: 'Authentic Handloom Weave with Delicate Embroidered Edging',
+    description: 'Handwoven ivory Kanjivaram silk saree framed with a bright crimson border and antique gold temple zari pallu, paired with a matching red silk blouse featuring intricate gold sleeve embroidery.',
+    fabric: 'Pure Kanjivaram Mulberry Silk & Antique Gold Zari',
+    work: 'Traditional Zari Border Weave with Hand-Embroidered Blouse Sleeves',
     details: [
       'Pure handloom silk certified with Silk Mark authentication',
-      'Fine zari butta detailing across the bodice and dupatta border',
-      'Includes tailored straight-cut trousers with elasticated waistband',
-      'Bespoke fitting and sleeve customization available on request',
+      'Self-woven brocade patterns across the ivory drape',
+      'Includes matching red blouse fabric with gold zari sleeve border',
+      'Bespoke blouse fitting and sleeve customization available on request',
       'Estimated crafting & delivery timeframe: 2–3 weeks'
     ]
   },
   {
     id: 'prod-02',
-    name: 'Ananya Saffron Organza Anarkali',
+    name: 'Meher Rani Pink & Gold Foil Anarkali Set',
     category: 'ethnic-wear',
     categoryName: 'Ethnic Wear',
     price: '₹22,000',
     badge: 'Editorial Pick',
     images: [
       'assets/images/product-01.webp',
-      'assets/images/collection-07.webp'
+      'assets/images/product-24.webp',
+      'assets/images/hero-01.webp'
     ],
-    description: '(Sample specification) Luminous saffron yellow flared anarkali suit crafted in sheer silk organza. Finished with delicate hand-embroidered lace edging and tonal sequin accents along the hemline.',
-    fabric: 'Raw Silk Bodice & Fine Silk Organza Flare',
-    work: 'Hand-Embroidered Zardozi Kiran Edging with Micro Sequins',
+    description: 'Rani pink flared anarkali kurta with a mandarin collar and delicate gold foil motifs, paired with matching straight trousers and a gold-striped bordered dupatta.',
+    fabric: 'Soft Silk-Blend Chanderi with Breathable Cotton Lining',
+    work: 'Metallic Gold Foil Botanical Motifs & Striped Zari Borders',
     details: [
-      'Multi-panel kalidar flare with structured inner lining',
-      'Intricately embellished neckline with fine thread and mirror detailing',
-      'Includes matching sheer organza stole with hand-finished tassels',
-      'Custom color options available for festive group orders',
-      'Estimated crafting timeframe: 3–4 weeks'
+      'Flared anarkali silhouette with structured mandarin neckline',
+      'All-over gold foil botanical accents across bodice and skirt',
+      'Includes matching straight-cut trousers and bordered dupatta',
+      'Custom sleeve length options available for festive orders',
+      'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
   {
     id: 'prod-03',
-    name: 'Mayura Tangerine Silk Ensemble',
+    name: 'Nandini Rust-Orange Banarasi Silk Saree',
     category: 'ethnic-wear',
     categoryName: 'Ethnic Wear',
     price: '₹19,500',
     badge: 'Heirloom',
     images: [
       'assets/images/product-02.webp',
-      'assets/images/collection-01.webp'
+      'assets/images/product-26.webp',
+      'assets/images/product-15.webp'
     ],
-    description: '(Sample specification) Vibrant tangerine pure silk ensemble with bottle green border accents. Tailored with interlocking zari borders and auspicious geometric motifs.',
-    fabric: 'Heirloom Heavy-Ply Pure Silk',
-    work: 'Interlocked Zari Border with Hand-Finished Detailing',
+    description: 'Vibrant rust-orange pure silk saree woven with an ornate scalloped antique gold brocade pallu and contrasting deep maroon selvedge border.',
+    fabric: 'Pure Handloom Banarasi Silk & Antique Gold Zari',
+    work: 'Scalloped Gold Brocade Pallu with Contrasting Maroon Border',
     details: [
-      'Traditional handloom weaving techniques with dual-tone sheen',
-      'Contrasting deep emerald trims along sleeve cuffs and placket',
-      'Coordinating tailored bottom fabric with soft silk lining',
+      'Traditional handloom weaving with rich burnt-orange sheen',
+      'Dense scalloped antique gold brocade across the pallu',
+      'Contrasting deep maroon border along the drape edge',
       'Preserved with protective anti-tarnish tissue wrapping',
       'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
   {
     id: 'prod-04',
-    name: 'Kalyani Woven Gold Silk Suit',
+    name: 'Sunehri Marigold Embroidered Peplum Lehenga',
     category: 'ethnic-wear',
     categoryName: 'Ethnic Wear',
     price: '₹21,000',
     badge: 'Classic Weave',
     images: [
       'assets/images/product-03.webp',
-      'assets/images/product-15.webp'
+      'assets/images/product-34.webp',
+      'assets/images/hero-05.webp'
     ],
-    description: '(Sample specification) Radiant woven gold tissue suit featuring delicate floral boota patterns and hand-tasseled borders. Tailored for classic evening celebrations.',
-    fabric: 'Pure Gold Tissue Silk with Soft Cotton Lining',
-    work: 'Solid Gold Zari Brocade & Hand-Tasseled Hemlines',
+    description: 'Marigold yellow sleeveless peplum blouse with floral metallic embroidery and a crisp box-pleated flare, paired with a flowing floor-length pleated skirt and matching stole.',
+    fabric: 'Pure Raw Silk Bodice & Flowing Georgette Pleated Skirt',
+    work: 'Hand-Embroidered Floral Bodice with Box-Pleated Peplum',
     details: [
-      'All-over micro-butta detailing woven with antique gold yarn',
-      'Handcrafted tassels along the dupatta perimeter',
-      'Comes with embroidered raw silk trousers',
-      'Custom neckline and sleeve tailoring included',
+      'Sleeveless raw silk bodice worked with silver and gold florals',
+      'Architectural box-pleated peplum waist accented with zari trim',
+      'Paired with a full-length micro-pleated skirt and matching stole',
+      'Custom neckline and strap adjustments included',
       'Estimated crafting timeframe: 3 weeks'
     ]
   },
   {
     id: 'prod-05',
-    name: 'Samriddhi Festive Silk Coord Set',
+    name: 'Zariya Rust-Orange Embroidered Silk Kaftan',
     category: 'ethnic-wear',
     categoryName: 'Ethnic Wear',
     price: '₹16,500',
     badge: 'Festive Edit',
     images: [
       'assets/images/story-02.webp',
-      'assets/images/social-02.webp'
+      'assets/images/product-23.webp'
     ],
-    description: '(Sample specification) Coordinated pure silk festive set featuring a contemporary asymmetric tunic paired with pleated palazzos in a rich jewel-tone palette.',
-    fabric: '100% Pure Mulberry Silk & Metallic Zari Highlights',
-    work: 'Contrast Piping with Delicate Gota Embroidery',
+    description: 'Regal burnt-orange textured silk kaftan tunic lavishly framed with dense antique gold and silver floral embroidery along the V-neckline, placket, and wide draped sleeves.',
+    fabric: 'Textured Raw Silk-Linen Blend',
+    work: 'Heavy Metallic Zari, Resham & Sequin Border Embroidery',
     details: [
-      'Available in coordinating seasonal jewel colorways',
-      'Lightweight and fluid drape designed for day-long festive comfort',
-      'Includes detachable waist belt with hand-sewn embellishments',
-      'Easy customization of length and trouser silhouette',
+      'Relaxed kaftan drape designed for effortless evening comfort',
+      'Broad geometric metallic embroidery framing the neckline and sleeves',
+      'Breathable inner cotton voile lining for warm-weather wear',
+      'Easy customization of tunic length on request',
       'Estimated crafting timeframe: 2 weeks'
     ]
   },
   {
     id: 'prod-06',
-    name: 'Devika Crimson Velvet Jacket Suit',
+    name: 'Arundhati Rust & Gold Brocade Pallu Saree',
     category: 'ethnic-wear',
     categoryName: 'Ethnic Wear',
     price: '₹24,000',
     badge: 'New Edition',
     images: [
       'assets/images/story-04.webp',
-      'assets/images/product-01.webp'
+      'assets/images/hero-02.webp',
+      'assets/images/product-15.webp'
     ],
-    description: '(Sample specification) Regal crimson velvet longline jacket suit enriched with hand-cutwork zardozi borders and seed pearl embroidery over tailored silk trousers.',
-    fabric: 'Plush Silk Velvet & Pure Silk Dupion',
-    work: 'Hand-Cutwork Border, Micro Pearls & Dabka Wire Embroidery',
+    description: 'Lustrous rust-orange woven silk saree featuring an expansive scalloped gold brocade pallu and structured maroon edging tailored for fluid festive draping.',
+    fabric: 'Pure Woven Mulberry Silk & Metallic Zari',
+    work: 'All-Over Scalloped Gold Zari Brocade Pallu',
     details: [
-      'Dimensional wirework embroidery on lapels and sleeve cuffs',
-      'Paired with straight-fit silk trousers and sheer tissue dupatta',
-      'Complimentary personalized trial and fitting session',
-      'Custom monogramming option available on jacket lining',
-      'Estimated crafting timeframe: 3–4 weeks'
+      'Woven scalloped motif pattern spanning the entire pallu',
+      'Rich rust-orange body with subtle tonal self-texture',
+      'Includes matching unstitched silk blouse piece',
+      'Complimentary fall and edging finish before dispatch',
+      'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
 
@@ -159,91 +163,94 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-07',
-    name: 'Seraphina French Lace Evening Gown',
+    name: 'Sienna Mustard Half-Zip Sweatshirt & Olive Set',
     category: 'western-wear',
     categoryName: 'Western Wear',
     price: '₹28,000',
-    badge: 'Couture Signature',
+    badge: 'Contemporary Edit',
     images: [
       'assets/images/collection-02.webp',
-      'assets/images/hero-05.webp',
-      'assets/images/product-11.webp'
+      'assets/images/product-20.webp',
+      'assets/images/product-31.webp'
     ],
-    description: '(Sample specification) Architectural corseted evening gown featuring hand-placed French Chantilly lace, scalloped hemline, and an illusion back tailored to bespoke measurements.',
-    fabric: 'French Chantilly Lace, Silk Tulle & Duchess Satin',
-    work: 'Hand-Appliquéd Lace, Micro Crystals & Pearl Boning',
+    description: 'Mustard yellow cropped half-zip cotton fleece pullover with a structured front flap pocket and ribbed cuffs, styled with dark olive faux-leather trousers.',
+    fabric: 'Heavyweight Combed Cotton Fleece & Matte Faux Leather',
+    work: 'Clean Contrast Zip Hardware & Structured Utility Pocket',
     details: [
-      'Inner corset boning with comfortable structured support',
-      'Scalloped hemline hand-cut along the organic lace pattern',
-      'Concealed back zip with hand-covered satin button facade',
-      'Complimentary garment bag and personalized hanger included',
-      'Estimated crafting timeframe: 3–5 weeks'
+      'Cropped boxy silhouette with wide ribbed hem and cuffs',
+      'Quarter-zip collar with cognac leather-look zipper pull',
+      'Front right utility flap pocket with tonal topstitching',
+      'Paired with high-waisted dark olive faux-leather trousers',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-08',
-    name: 'Valerie Architectural Satin Gown',
+    name: 'Clara Black Floral Belted Midi Shirt-Dress',
     category: 'western-wear',
     categoryName: 'Western Wear',
     price: '₹18,500',
     badge: 'Minimalist Grace',
     images: [
       'assets/images/product-04.webp',
-      'assets/images/collection-04.webp'
+      'assets/images/product-13.webp',
+      'assets/images/product-29.webp'
     ],
-    description: '(Sample specification) Heavyweight duchess satin evening dress crafted with clean minimalist lines, an elegant boat neckline, and structured box pleats with deep hidden pockets.',
-    fabric: 'Ultra-Luxe Heavy Duchess Satin & Silk Lining',
-    work: 'Architectural Seaming & Hand-Covered Fabric Buttons',
+    description: 'Black botanical floral-printed short-sleeve midi shirt-dress tailored with a crisp collar, concealed button placket, and matching self-tie waist belt.',
+    fabric: 'Breathable Viscose Crepe Cotton',
+    work: 'All-Over Vintage Botanical Print with Self-Tie Waist Belt',
     details: [
-      'Timeless clean silhouette tailored for modern formal evenings',
-      'Concealed deep side pockets seamlessly integrated into pleated skirt',
-      'Sweeping train with interior bustle loop for evening events',
-      'Available in ivory, champagne, and midnight navy',
-      'Estimated crafting timeframe: 3 weeks'
+      'Warm rose, cream, and sage botanical print on deep black ground',
+      'Short cuffed sleeves and classic pointed shirt collar',
+      'Adjustable matching fabric tie belt to define the waist',
+      'Ankle-grazing straight midi cut with side seam pockets',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-09',
-    name: 'Celeste Pearl-Embroidered Cape Dress',
+    name: 'Paloma Monochrome Leaf-Print Wrap Co-ord',
     category: 'western-wear',
     categoryName: 'Western Wear',
     price: '₹21,000',
-    badge: 'Bespoke Edit',
+    badge: 'Resort Edit',
     images: [
       'assets/images/product-05.webp',
-      'assets/images/collection-07.webp'
+      'assets/images/product-21.webp',
+      'assets/images/hero-04.webp'
     ],
-    description: '(Sample specification) Shimmering ivory organza dress paired with a detachable sheer cape embellished with hand-embroidered pearl borders and delicate tonal floral threadwork.',
-    fabric: 'Pure Shimmer Silk Organza & French Lace',
-    work: 'Hand Cutwork, Natural Seed Pearls & Silk Floss Embroidery',
+    description: 'Monochrome black and ivory leaf-printed sleeveless V-neck wrap top paired with matching high-rise straight-leg relaxed trousers.',
+    fabric: 'Lightweight Printed Linen-Cotton Blend',
+    work: 'Tailored Wrap Bodice & Relaxed Straight-Cut Trousers',
     details: [
-      'Detachable cape adds two distinct styling looks in one garment',
-      'Scalloped perimeter hand-worked with lustrous seed pearls',
-      'Tailored with soft stretch lining for effortless movement',
-      'Custom length adjustments included at no additional charge',
-      'Estimated crafting timeframe: 3–4 weeks'
+      'Crisp graphic ivory leaf pattern across deep charcoal-black base',
+      'Sleeveless V-neck wrap top with clean asymmetric closure',
+      'Relaxed straight-leg trousers with deep side pockets',
+      'Ideal for resort getaways, brunches, and warm-weather travel',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-10',
-    name: 'Evangeline Tailored Shimmer Blazer Set',
+    name: 'Marina Indigo Floral Collared Co-ord Set',
     category: 'western-wear',
     categoryName: 'Western Wear',
     price: '₹19,000',
     badge: 'Tailored Luxury',
     images: [
       'assets/images/product-06.webp',
-      'assets/images/product-16.webp'
+      'assets/images/product-22.webp',
+      'assets/images/product-32.webp'
     ],
-    description: '(Sample specification) Luminous antique gold tissue pantsuit featuring a double-breasted structured blazer, peaked lapels, and high-waisted pleated wide-leg trousers.',
-    fabric: 'Metallic Tissue Silk & Pure Wool Crepe Blend',
-    work: 'Precision Tailoring with Hand-Stitched Pick Lapel Detailing',
+    description: 'Deep indigo collared tunic and matching wide-leg trousers patterned with ivory and sky-blue botanical floral motifs and three-quarter cuffed sleeves.',
+    fabric: 'Soft Pure Cotton Poplin',
+    work: 'Botanical Block-Style Floral Print with Relaxed Shirt Collar',
     details: [
-      'Subtle metallic sheen that reflects warm ambient evening light',
-      'Horn buttons and functional interior passport pocket',
-      'High-waisted trousers with adjustable side tabs',
-      'Crafted in limited numbers per seasonal edition',
-      'Estimated crafting timeframe: 2–3 weeks'
+      'Crisp white pearl-button placket and folded shirt collar',
+      'Three-quarter sleeves with buttoned cuffs for easy styling',
+      'High-waisted wide-leg trousers in matching floral print',
+      'Pre-washed for breathable softness and zero shrinkage',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
 
@@ -252,157 +259,162 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-11',
-    name: 'Noor Blush Pink Pleated Skirt Set',
+    name: 'Noor Navy & Wine Embroidered Anarkali Gowns',
     category: 'occasion-wear',
     categoryName: 'Occasion Wear',
     price: '₹22,500',
-    badge: 'Pastel Edit',
+    badge: 'Evening Edit',
     images: [
       'assets/images/collection-03.webp',
-      'assets/images/hero-01.webp',
-      'assets/images/product-07.webp'
+      'assets/images/product-17.webp',
+      'assets/images/product-12.webp'
     ],
-    description: '(Sample specification) Ethereal blush pink skirt set adorned with champagne beads, floral threadwork, and sheer dupatta crafted for celebratory galas and receptions.',
-    fabric: 'Pure Silk Organza, Soft Net & Butter Silk Lining',
-    work: 'Resham Floral Threadwork, Micro Pearls & Champagne Cutdana',
+    description: 'Floor-length pleated silk-crepe evening anarkali gowns in deep midnight navy and rich wine maroon, adorned with shimmering gold botanical hem and sleeve embroidery.',
+    fabric: 'Flowing Silk Crepe & Fine Net Lining',
+    work: 'Handcrafted Gold Metallic Floral Embroidery & Pleated Hem',
     details: [
-      'Voluminous 16-panel flared skirt with canvas inner flare',
-      'Sweetheart neckline top with hand-embroidered cap sleeves',
-      'Lightweight dupatta with delicate four-sided scalloped borders',
-      'Detachable embroidered waist belt included',
+      'Available in deep midnight navy or rich wine maroon colorways',
+      'Voluminous pleated skirt finished with a wide ruffled hem',
+      'Botanical gold threadwork ascending from the lower skirt and cuffs',
+      'Custom sleeve and neckline styling available to order',
       'Estimated crafting timeframe: 3–4 weeks'
     ]
   },
   {
     id: 'prod-12',
-    name: 'Aurelia Floral Organza Maxi Ensemble',
-    category: 'occasion-wear',
-    categoryName: 'Occasion Wear',
+    name: 'Tara Dusty Rose Floral Cotton Kurta Set',
+    category: 'casual-wear',
+    categoryName: 'Casual Wear',
     price: '₹23,000',
-    badge: 'Romantic Glamour',
+    badge: 'Daylight Chic',
     images: [
       'assets/images/product-07.webp',
-      'assets/images/collection-03.webp'
+      'assets/images/product-25.webp',
+      'assets/images/social-02.webp'
     ],
-    description: '(Sample specification) Romantic pastel ensemble handcrafted in sheer silk organza, adorned with hand-painted botanical motifs and glistening champagne sequin handwork.',
-    fabric: 'Hand-Painted Silk Organza & Shimmer Crepe',
-    work: 'Watercolour Botanical Print with Hand Sequin Embellishment',
+    description: 'Dusty rose pink V-neck cotton kurta with three-quarter slit sleeves featuring ivory floral print along the cuffs, hemline, and matching straight trousers.',
+    fabric: '100% Breathable Combed Cotton',
+    work: 'Ivory Botanical Placement Print with Slit-Sleeve Tailoring',
     details: [
-      'Bespoke botanical print exclusive to our atelier collection',
-      'Delicate micro-pleated waistband with handcrafted fabric tassels',
-      'Tailored top with sheer illusion back and mother-of-pearl buttons',
-      'Ideal for garden parties, sunset soirées, and gallery openings',
-      'Estimated crafting timeframe: 3 weeks'
+      'Clean notched V-neckline tailored for everyday comfort',
+      'Slit-cuff three-quarter sleeves framed with cream rose motifs',
+      'Matching dusty rose straight pants with floral hem border',
+      'Pre-shrunk fabric suitable for effortless warm-weather wear',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-13',
-    name: 'Samira Fuchsia Georgette Gown',
+    name: 'Ruhani Maroon & Gold Chevron Bridal Lehenga',
     category: 'occasion-wear',
     categoryName: 'Occasion Wear',
     price: '₹26,000',
     badge: 'Evening Glow',
     images: [
       'assets/images/product-08.webp',
-      'assets/images/product-15.webp'
+      'assets/images/product-16.webp',
+      'assets/images/product-28.webp'
     ],
-    description: '(Sample specification) Radiant fuchsia silk georgette gown lavishly embellished with antique gold geometric chevron patterns and a hand-worked crystal bodice.',
-    fabric: 'Pure Silk Georgette & Fine Metallic Gold Thread',
-    work: 'Chevron Zari Geometrics & Hand-Encrusted Crystal Bodice',
+    description: 'Deep maroon and olive-green richly embroidered lehenga choli featuring geometric chevron gold zari patterns, sequin highlights, and intricate floral border motifs.',
+    fabric: 'Plush Silk Velvet & Heavy Raw Silk',
+    work: 'Dense Antique Gold Zardozi, Chevron Sequins & Resham',
     details: [
-      'Elongated silhouette engineered with fluid drape and posture',
-      'Built-in cup support with customizable neckline depth',
-      'Includes matching sheer shoulder wrap with embellished borders',
+      'Sweetheart-neckline olive and maroon velvet choli with elbow sleeves',
+      'Multi-panel flared maroon skirt with upper chevron zari work',
+      'Elaborate scenic and floral embroidered border panels along the hem',
       'Precision sizing adjusted to individual height and measurements',
       'Estimated crafting timeframe: 3–4 weeks'
     ]
   },
   {
     id: 'prod-14',
-    name: 'Althea Emerald Velvet Evening Robe',
+    name: 'Vaidehi Ivory & Red Zari Kanjivaram Saree',
     category: 'occasion-wear',
     categoryName: 'Occasion Wear',
     price: '₹25,000',
-    badge: 'Winter Royale',
+    badge: 'Heritage Classic',
     images: [
       'assets/images/product-09.webp',
-      'assets/images/product-24.webp'
+      'assets/images/product-18.webp',
+      'assets/images/collection-01.webp'
     ],
-    description: '(Sample specification) Deep emerald velvet evening ensemble embroidered with antique dabka and tilla threadwork, designed for formal winter galas and award evenings.',
-    fabric: 'Micro-Velvet & Shimmer Tissue Lining',
-    work: 'Antique Dabka, Nakshi Wirework & Emerald Crystal Accents',
+    description: 'Lustrous ivory brocade Kanjivaram silk saree accented with wide gold zari borders and a crimson selvedge, styled with an embroidered red silk blouse.',
+    fabric: 'Pure Kanjivaram Silk & Gold Zari',
+    work: 'Self-Woven Brocade Body with Zari Sleeve Embroidery',
     details: [
-      'Rich jewel tone with deep light absorption and luxurious handfeel',
-      'Features 3D organza floral shoulder appliqués',
-      'Reinforced structured hemline for elegant architectural drape',
-      'Custom color adaptations available on request',
-      'Estimated crafting timeframe: 3–4 weeks'
+      'Cream-ivory body woven with subtle self-floral silk brocade',
+      'Contrasting bright crimson and antique gold temple borders',
+      'Includes matching red blouse with pearl-edged zari sleeve cuffs',
+      'Authenticated pure silk craftsmanship',
+      'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
   {
     id: 'prod-15',
-    name: 'Sitara Ivory Embellished Tunic Set',
-    category: 'occasion-wear',
-    categoryName: 'Occasion Wear',
+    name: 'Vana Forest Green Floral Tunic Co-ord',
+    category: 'casual-wear',
+    categoryName: 'Casual Wear',
     price: '₹24,000',
-    badge: 'Heirloom Luxe',
+    badge: 'Resort Luxe',
     images: [
       'assets/images/product-10.webp',
-      'assets/images/product-12.webp'
+      'assets/images/product-19.webp',
+      'assets/images/product-30.webp'
     ],
-    description: '(Sample specification) Ivory heirloom silk tunic and trouser set designed with subtle reflective mirror motifs, scalloped borders, and an ethereal sheer stole.',
-    fabric: 'Ivory Dupion Silk & Translucent Net',
-    work: 'Fine Mirror Work Borders, Ivory Thread Embroidery & Zardozi',
+    description: 'Forest green mandarin-collar relaxed tunic and wide-leg trousers covered in vibrant coral, mustard, and teal botanical floral prints.',
+    fabric: 'Lightweight Breathable Cotton Lawn',
+    work: 'All-Over Multicolor Botanical Print with Stand Collar',
     details: [
-      'Subtle metallic shimmer designed for candlelit evening dinners',
-      'Customized sleeve lengths (sleeveless, three-quarter, or full)',
-      'Includes matching embellished fabric clutch purse',
-      'Private styling consultation included with every order',
-      'Estimated crafting timeframe: 3 weeks'
+      'Easy A-line tunic silhouette with three-quarter sleeves',
+      'Vibrant coral, peach, and cream floral pattern on deep forest green',
+      'Coordinating wide-leg ankle-length trousers with elasticated waist',
+      'Ideal for daytime gatherings, travel, and resort lounging',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-16',
-    name: 'Veda Metallic Tiered Flare Dress',
+    name: 'Meera Burnt-Orange Zari Embroidered Kaftan',
     category: 'occasion-wear',
     categoryName: 'Occasion Wear',
     price: '₹19,500',
-    badge: 'Festive Twirl',
+    badge: 'Festive Glow',
     images: [
       'assets/images/product-23.webp',
-      'assets/images/hero-02.webp'
+      'assets/images/story-02.webp'
     ],
-    description: '(Sample specification) Shimmering gold and ochre tiered dress silhouette engineered for effortless movement and fluid 360-degree rotation on the dance floor.',
-    fabric: 'Tissue Georgette & Pure Gold Brocade Trim',
-    work: 'Sequinned Chevron Flare with Floral Embroidered Hemline',
+    description: 'Statement burnt-orange festive kaftan richly ornamented with geometric silver and gold metallic threadwork and embroidered sleeve panels.',
+    fabric: 'Textured Raw Silk & Cotton Voile Lining',
+    work: 'Ornate Gold Zari, Sequin & Geometric Trim Embroidery',
     details: [
-      'Lightweight multi-tiered construction for effortless movement',
-      'Contrast jewel-tone handwork accents along hem',
-      'Custom-fitted bodice with tie-up back fastening',
-      'Dry-clean only with protective garment bag included',
+      'Rich burnt-orange hue accented with warm metallic embroidery',
+      'Wide kimono-style draped sleeves with detailed floral borders',
+      'V-neckline trimmed with vertical mirror-like sequin bands',
+      'Custom length adjustments available at no extra charge',
       'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
   {
     id: 'prod-17',
-    name: 'Elysian Champagne Couture Slip & Cape',
-    category: 'occasion-wear',
-    categoryName: 'Occasion Wear',
+    name: 'Kavya Rose Pink Botanical Kurta Co-ord',
+    category: 'casual-wear',
+    categoryName: 'Casual Wear',
     price: '₹27,500',
-    badge: 'Runway Edit',
+    badge: 'Everyday Edit',
     images: [
       'assets/images/product-25.webp',
-      'assets/images/hero-04.webp'
+      'assets/images/product-07.webp',
+      'assets/images/collection-05.webp'
     ],
-    description: '(Sample specification) Champagne slip dress and floor-sweeping cape tailored with delicate sequins, liquid silk crepe drape, and subtle micro crystal accents.',
-    fabric: 'Champagne Shimmer Tulle & Duchess Crepe',
-    work: 'Vertical Bugle Bead Encrusting & Micro Crystal Cascade',
+    description: 'Soft rose pink everyday kurta set accented with cream rose prints along the cuffs and border, paired with coordinated straight-fit cotton pants.',
+    fabric: 'Pure Mercerized Cotton',
+    work: 'Delicate Ivory Floral Placement Print',
     details: [
-      'Flattering elongated silhouette that catches light dynamically',
-      'Removable cape piece allows versatile day-to-evening styling',
-      'Silk crepe lining that feels breathable against the skin',
-      'Private fitting room session available upon appointment',
-      'Estimated crafting timeframe: 3–4 weeks'
+      'Tailored notched neckline with clean tonal princess seams',
+      'Ivory rose sketch print placed along cuffs, hem, and trousers',
+      'Soft breathable finish crafted for all-day comfort',
+      'Includes matching straight-cut cotton trousers',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
 
@@ -411,90 +423,93 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-18',
-    name: 'Ophelia Beaded Tulle Party Gown',
+    name: 'Rajwada Maroon Zardozi Chevron Lehenga',
     category: 'festive-collection',
     categoryName: 'Festive Collection',
     price: '₹24,000',
     badge: 'Festive Edit',
     images: [
       'assets/images/collection-04.webp',
-      'assets/images/product-04.webp'
+      'assets/images/product-08.webp',
+      'assets/images/product-16.webp'
     ],
-    description: '(Sample specification) Graceful fit-and-flare dress rendered in micro-pleated tulle with hand-embroidered pearl vines along the neckline and corset back.',
-    fabric: 'Micro-Pleated Silk Tulle & Soft Crepe Lining',
-    work: 'Hand-Embroidered Pearl Vines & Crystal Bodice Applique',
+    description: 'Opulent deep maroon festive lehenga paired with an olive-and-maroon embroidered sweetheart blouse, featuring shimmering chevron gold work and scenic hemline panels.',
+    fabric: 'Silk Velvet Blouse & Heavy Raw Silk Skirt',
+    work: 'Hand-Worked Chevron Zardozi, Cutdana & Floral Applique',
     details: [
-      'Structured internal bodice with flexible boning',
-      'Lace-up back allowing adjustable micro-adjustments for perfect fit',
-      'Built-in support cups and hidden waist stay band',
+      'Structured olive-green and maroon velvet blouse with intricate sleeve work',
+      'Chevron gold zari waist panel transitioning into diamond motifs',
+      'Reinforced structured hemline for grand bridal and festive flare',
       'Includes protective garment storage box',
       'Estimated crafting timeframe: 3–4 weeks'
     ]
   },
   {
     id: 'prod-19',
-    name: 'Giselle Embroidered Festive Anarkali',
-    category: 'festive-collection',
-    categoryName: 'Festive Collection',
+    name: 'Neela Indigo Botanical Collared Co-ord',
+    category: 'casual-wear',
+    categoryName: 'Casual Wear',
     price: '₹29,000',
-    badge: 'Statement Piece',
+    badge: 'Statement Print',
     images: [
       'assets/images/product-11.webp',
-      'assets/images/collection-04.webp'
+      'assets/images/product-06.webp',
+      'assets/images/story-01.webp'
     ],
-    description: '(Sample specification) Bespoke ivory festive anarkali with sheer pearl-embellished cape, handcrafted floral lace embroidery, and sweeping graceful hemline.',
-    fabric: 'Ivory Silk Organza, Beaded Lace & French Tulle Cape',
-    work: 'Dimensional Cape Embroidery, Pearl Droplets & Floral Applique',
+    description: 'Relaxed indigo blue collared tunic and straight trousers highlighted with ivory floral sketches and subtle teal leaf accents.',
+    fabric: '100% Soft Printed Cotton',
+    work: 'Two-Tone Indigo & Ivory Botanical Print with Shirt Cuffs',
     details: [
-      'Detachable 2.5-meter sheer cape with pearl-encrusted shoulders',
-      'Flared silhouette underneath for dual styling versatility',
-      'Hemline reinforced with horsehair braid for dramatic flare',
-      'Handcrafted under the direct guidance of master tailors',
-      'Estimated crafting timeframe: 4–5 weeks'
+      'Deep indigo canvas printed with crisp ivory flower and teal leaf motifs',
+      'Relaxed shirt-collar neckline with pearl button closure',
+      'Coordinating wide-leg trousers for effortless two-piece dressing',
+      'Tailored with breathable natural cotton finish',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-20',
-    name: 'Rosalind Pearl Fringe Cocktail Dress',
+    name: 'Rubina Wine Maroon Embroidered Anarkali Gown',
     category: 'festive-collection',
     categoryName: 'Festive Collection',
     price: '₹22,500',
     badge: 'Modern Runway',
     images: [
       'assets/images/product-12.webp',
-      'assets/images/product-18.webp'
+      'assets/images/collection-03.webp'
     ],
-    description: '(Sample specification) Modern champagne cocktail dress crafted with architectural boning, delicate pearl fringe tassels, and a softly cascading fluid skirt.',
-    fabric: 'Champagne Fluid Silk Crepe & Fine Netting',
-    work: 'Hand-Strung Pearl Fringe Tassels & Geometric Cutdana',
+    description: 'Deep wine maroon floor-length flared anarkali gown with dramatic bell sleeves, an embroidered choker collar, and antique gold floral motifs along the pleated hem.',
+    fabric: 'Fluid Georgette & Silk Crepe',
+    work: 'Gold Metallic Floral Embroidery on Bell Sleeves & Hem',
     details: [
-      'Pearl fringe sways gracefully with every step and movement',
-      'Plunging illusion neckline with ultra-fine mesh',
-      'Low open back with delicate horizontal pearl strap detail',
+      'Wide sweetheart neckline paired with a matching embroidered choker',
+      'Dramatic flared bell sleeves embroidered in antique gold florals',
+      'Knife-pleated hemline tier adding fluid movement',
       'Made-to-measure tailoring option included',
       'Estimated crafting timeframe: 3 weeks'
     ]
   },
   {
     id: 'prod-21',
-    name: 'Adeline Jewel-Collar Satin Evening Gown',
+    name: 'Lavanya Ivory & Crimson Temple Silk Saree',
     category: 'festive-collection',
     categoryName: 'Festive Collection',
     price: '₹20,000',
-    badge: 'Cocktail Couture',
+    badge: 'Festive Couture',
     images: [
       'assets/images/product-18.webp',
-      'assets/images/product-12.webp'
+      'assets/images/product-09.webp',
+      'assets/images/collection-01.webp'
     ],
-    description: '(Sample specification) Sophisticated champagne reception gown featuring an architectural high neckline and structured bodice designed for formal evening celebrations.',
-    fabric: 'Duchess Satin & Beaded Silk Tulle',
-    work: 'Micro-Beaded Choker Collar & Fine Pleated Bodice',
+    description: 'Classic cream Kanjivaram silk saree woven with fine self-check motifs, wide antique gold zari borders, and a rich crimson border paired with an embroidered red blouse.',
+    fabric: 'Pure Mulberry Kanjivaram Silk',
+    work: 'Woven Gold Zari Border & Pearl-Edged Blouse Sleeves',
     details: [
-      'Designed to pair harmoniously with high-end statement jewelry',
-      'Flattering mermaid contour with concealed back zipper',
-      'Tailored to individual bust, waist, and hip specifications',
-      'Delivery with protective hanging suit bag and anti-wrinkle care',
-      'Estimated crafting timeframe: 3 weeks'
+      'Radiant ivory silk weave balanced by a vibrant vermilion-red border',
+      'Intricate antique gold zari motifs along the red blouse sleeves',
+      'Hand-finished pearl bead edging along the sleeve cuff',
+      'Delivery with protective hanging suit bag',
+      'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
 
@@ -503,90 +518,92 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-22',
-    name: 'Avani Organic Linen Tunic & Trousers',
+    name: 'Anvi Mauve Rose Printed Kurta Set',
     category: 'casual-wear',
     categoryName: 'Casual Wear',
     price: '₹14,000',
     badge: 'Daily Luxury',
     images: [
       'assets/images/collection-05.webp',
-      'assets/images/product-13.webp'
+      'assets/images/product-07.webp'
     ],
-    description: '(Sample specification) Pure organic linen two-piece set woven with delicate metallic border yarns, balancing relaxed everyday comfort with refined contemporary appeal.',
-    fabric: 'Organic Handloom Linen & Muted Metallic Thread',
-    work: 'Handloom Shuttle Weave with Refined Geometric Borders',
+    description: 'Mauve-rose relaxed cotton kurta set featuring a notched V-neckline and cream botanical prints across the hem, sleeves, and tailored trousers.',
+    fabric: 'Breathable Pure Handloom Cotton',
+    work: 'Crisp Cream Botanical Print with Notched Neckline',
     details: [
-      'Woven by master artisans upholding handloom heritage',
-      'Naturally breathable fabric ideal for warm climates',
-      'Straight-fit cropped trousers with drawstring waist',
+      'Soft mauve-rose cotton tailored for warm-weather comfort',
+      'Three-quarter sleeves with subtle side slit cuffs',
+      'Straight-fit trousers with matching ivory floral print at ankle',
       'Pre-washed and pre-shrunk for effortless home care',
       'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-23',
-    name: 'Vrinda Pure Cotton Handloom Coord',
+    name: 'Maya Black Botanical Belted Midi Dress',
     category: 'casual-wear',
     categoryName: 'Casual Wear',
     price: '₹17,500',
-    badge: 'Artisan Weave',
+    badge: 'Daywear Edit',
     images: [
       'assets/images/product-13.webp',
-      'assets/images/collection-05.webp'
+      'assets/images/product-04.webp',
+      'assets/images/hero-03.webp'
     ],
-    description: '(Sample specification) Timeless handloom cotton-silk coord set featuring an emerald body and contrasting maroon accents, woven with understated border motifs.',
-    fabric: 'Fine Cotton-Silk Blend & Natural Vegetable Dyes',
-    work: 'Two-Tone Contrast Weave with Fine Needlework Trims',
+    description: 'Easygoing black short-sleeve shirt-dress covered in warm coral, cream, and sage floral motifs with a cinching waist tie.',
+    fabric: 'Soft Cotton-Viscose Blend',
+    work: 'All-Over Floral Print with Tailored Shirt Collar',
     details: [
-      'Dual-tone colorway with exceptional handfeel and breathability',
-      'Relaxed silhouette suitable for office, travel, or casual dinners',
-      'Includes coordinating patch-pocket detail on tunic front',
-      'Handcrafted fabric buttons made from leftover textile cuttings',
-      'Estimated crafting timeframe: 2 weeks'
+      'Rich black base lifted by warm earthy floral patterns',
+      'Relaxed silhouette suitable for brunch, travel, or casual evenings',
+      'Detachable matching fabric waist belt for adjustable shaping',
+      'Breathable unlined drape with clean inside French seams',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-24',
-    name: 'Tharavadu Relaxed Woven Silk Shirt',
+    name: 'Saanvi Indigo Floral Printed Tunic Set',
     category: 'casual-wear',
     categoryName: 'Casual Wear',
     price: '₹16,000',
     badge: 'Relaxed Tailoring',
     images: [
       'assets/images/story-01.webp',
-      'assets/images/social-01.webp'
+      'assets/images/product-11.webp'
     ],
-    description: '(Sample specification) Contemporary relaxed-fit woven silk shirt with subtle self-stripes and dropped shoulders, designed for understated smart-casual dressing.',
-    fabric: 'Organic Handloom Raw Silk & Soft Cotton Blend',
-    work: 'Handloom Shuttle Weave with Hand-Rolled Seams',
+    description: 'Deep indigo printed button-placket tunic and matching wide trousers in breathable cotton, designed for effortless smart-casual daytime dressing.',
+    fabric: 'Pure Combed Cotton',
+    work: 'Botanical Hand-Screen Print with Three-Quarter Sleeves',
     details: [
-      'Authentic handloom texture with organic raw-silk slubs',
-      'Versatile camp collar styling that dresses up or down',
-      'Available in off-white, oat beige, and charcoal black',
+      'Rich indigo-blue cotton printed with oversized cream iris florals',
+      'Versatile shirt-collar tunic with half button placket',
+      'Paired with relaxed straight-leg printed trousers',
       'Hand-finished cuffs with genuine mother-of-pearl buttons',
       'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-25',
-    name: 'Souparnika Handwoven Everyday Dress',
-    category: 'casual-wear',
-    categoryName: 'Casual Wear',
+    name: 'Gulbahar Embroidered Cream Organza Dupatta',
+    category: 'artisanal-craft',
+    categoryName: 'Artisanal Craft',
     price: '₹13,500',
     badge: 'Atelier Favorite',
     images: [
       'assets/images/social-01.webp',
-      'assets/images/story-01.webp'
+      'assets/images/collection-07.webp',
+      'assets/images/story-03.webp'
     ],
-    description: '(Sample specification) Refined handloom shift dress curated for warm-weather styling, featuring subtle metallic pinstripes and functional side seam pockets.',
-    fabric: 'Fine Count Handloom Cotton & Silk Weft',
-    work: 'Featherweight Handloom Drape with Delicate Metallic Weft',
+    description: 'Translucent cream organza stole hand-embroidered with trailing vines and vibrant crimson, violet, and sage floral borders finished with red thread tassels.',
+    fabric: 'Sheer Pure Silk Organza',
+    work: 'Dense Multicolor Resham Floral Embroidery & Red Tassels',
     details: [
-      'Ultra-breathable weave ideal for tropical climates',
-      'A-line cut that flatters diverse body silhouettes',
-      'Deep concealed side pockets for daily essentials',
-      'Machine washable on delicate cycle',
-      'Estimated crafting timeframe: 1–2 weeks'
+      'Airy cream silk organza base embroidered with colourful garden vines',
+      'Wide floral-embroidered border framing all four sides',
+      'Hand-knotted crimson thread tassels along the edges',
+      'Pairs effortlessly with solid ivory, red, or emerald kurtas',
+      'Estimated crafting timeframe: 2 weeks'
     ]
   },
 
@@ -595,68 +612,71 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-26',
-    name: 'Imperial Crimson Embroidered Kurta',
+    name: 'Aranya Emerald Botanical Tunic Co-ord',
     category: 'new-arrivals',
     categoryName: 'New Arrivals',
     price: '₹16,500',
     badge: 'Seasonal Drop',
     images: [
       'assets/images/collection-06.webp',
-      'assets/images/product-14.webp'
+      'assets/images/product-10.webp',
+      'assets/images/product-19.webp'
     ],
-    description: '(Sample specification) Deep crimson silk kurta enriched with intricate scalloped zardozi embroidery along the placket and cuffs, from our latest seasonal drop.',
-    fabric: 'Signature Crimson Pure Silk & Heavy Gold Thread',
-    work: 'Hand-Cut Scalloped Zardozi with Bullion Wire Detailing',
+    description: 'Fresh forest green two-piece co-ord set featuring a relaxed stand-collar tunic and wide-leg trousers in rich coral and ochre floral motifs.',
+    fabric: 'Lightweight Cotton-Linen Blend',
+    work: 'Vibrant Botanical Print with Relaxed Three-Quarter Sleeves',
     details: [
-      'Signature shade of crimson exclusively dyed for our collection',
-      'Hand-cut scalloped borders embroidered on wooden frames',
-      'Includes tailored straight-leg silk trousers',
-      'Comes packaged in signature fabric keepsake garment bag',
-      'Estimated crafting timeframe: 2–3 weeks'
+      'Rich forest-green background with multi-hued floral tapestry print',
+      'Mandarin collar tunic with comfortable A-line flare',
+      'Includes coordinating straight-cut printed trousers',
+      'Comes packaged in a signature fabric keepsake garment bag',
+      'Estimated crafting timeframe: 1–2 weeks'
     ]
   },
   {
     id: 'prod-27',
-    name: 'Charulata Duo-Tone Silk Slip Dress',
+    name: 'Zoya Champagne Raw-Silk Bell-Sleeve Gown',
     category: 'new-arrivals',
     categoryName: 'New Arrivals',
     price: '₹17,500',
-    badge: 'Dual Tone Edit',
+    badge: 'Couture Edit',
     images: [
       'assets/images/product-14.webp',
-      'assets/images/collection-06.webp'
+      'assets/images/collection-08.webp',
+      'assets/images/product-33.webp'
     ],
-    description: '(Sample specification) Exquisite chartreuse silk slip dress complemented by a plum border detail and delicate floral buttas, reflecting modern evening minimalism.',
-    fabric: 'Dual-Tone Shot Silk (Chartreuse & Royal Plum)',
-    work: 'Fine Bias-Cut Tailoring with Delicate Hand-Stitched Hem',
+    description: 'Warm champagne raw-silk flared evening gown featuring an embroidered V-neckline and sheer organza bell sleeves detailed with pastel floral needlework.',
+    fabric: 'Pure Raw Silk & Sheer Organza Sleeves',
+    work: 'Pastel Floral Thread & Sequin Embroidery on Neckline & Cuffs',
     details: [
-      'Color-shifting shot silk that captures distinct tones in warm light',
-      'Flattering bias cut that contours naturally to body curves',
-      'Adjustable spaghetti straps with gold-tone hardware',
-      'Handloom authenticity certified with Silk Mark tag',
-      'Estimated crafting timeframe: 2 weeks'
+      'Luminous champagne raw silk with natural handloom slub texture',
+      'Sheer organza flared bell sleeves worked in pastel floral motifs',
+      'Tailored empire bodice transitioning into an expansive flared skirt',
+      'Matching embroidered floral border along the hemline',
+      'Estimated crafting timeframe: 3 weeks'
     ]
   },
   {
     id: 'prod-28',
-    name: 'Gulzar Deep Garnet Tailored Pantsuit',
+    name: 'Aafreen Magenta & Gold Foil Kurta Set',
     category: 'new-arrivals',
     categoryName: 'New Arrivals',
     price: '₹25,000',
     badge: 'Runway Pick',
     images: [
       'assets/images/product-24.webp',
-      'assets/images/collection-06.webp'
+      'assets/images/product-01.webp',
+      'assets/images/hero-01.webp'
     ],
-    description: '(Sample specification) Statement garnet red velvet and silk tailored pantsuit featuring an embroidered shawl lapel and straight-leg trousers from the winter capsule.',
-    fabric: 'Plush Silk Velvet & Shimmer Organza Highlights',
-    work: 'Dense Kasab & Tilla Hand Embroidery on Collar and Pockets',
+    description: 'Rich magenta flared kurta with a slit mandarin neckline and shimmering gold foil botanical prints, accompanied by matching trousers and a gold-trimmed dupatta.',
+    fabric: 'Silk-Blend Chanderi with Soft Cotton Lining',
+    work: 'Gold Foil Botanical Print & Striped Zari Borders',
     details: [
-      'Tailored blazer with lightly padded shoulders for strong posture',
-      'Matching trousers with tailored front crease and slash pockets',
-      'Smooth silk lining for frictionless layering over tops',
+      'Gathered waist anarkali kurta with gold-striped sleeve cuffs',
+      'Matching straight trousers dotted with subtle gold motifs',
+      'Flowing magenta dupatta framed with woven gold borders',
       'Customized tailor fitting included with every order',
-      'Estimated crafting timeframe: 3–4 weeks'
+      'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
 
@@ -665,91 +685,94 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-29',
-    name: 'Dahlia Cutwork & Pearl Embroidered Top',
+    name: 'Nargis Floral Embroidered Organza Stole',
     category: 'artisanal-craft',
     categoryName: 'Artisanal Craft',
     price: '₹12,500',
-    badge: 'Artisanal Cutwork',
+    badge: 'Artisanal Embroidery',
     images: [
       'assets/images/collection-07.webp',
-      'assets/images/product-16.webp'
+      'assets/images/story-03.webp',
+      'assets/images/social-01.webp'
     ],
-    description: '(Sample specification) Architectural laser and hand cutwork top enriched with Swarovski seed pearls, kasab zardozi, and hand-tasseled back fastening.',
-    fabric: 'Raw Silk & Fine Net Base',
-    work: 'Laser & Hand Cutwork, Seed Pearls & Fine Kasab Wire',
+    description: 'Artisanal cream sheer organza drape adorned with dense multicolor botanical needlework along wide floral borders and handcrafted red tassels.',
+    fabric: 'Fine Sheer Silk Organza',
+    work: 'Hand-Worked Multicolor Satin-Stitch Floral Embroidery',
     details: [
-      'Over 60 hours of meticulous hand-needle embroidery per piece',
-      'Reinforced cutwork edges that maintain shape across wears',
-      'Custom back neckline cutouts tailored to client preference',
-      'Pairs seamlessly with plain organza skirts or tailored trousers',
+      'Intricate floral and leafy vine needlework across sheer cream organza',
+      'Dense crimson, periwinkle, and olive embroidery along the border',
+      'Finished with hand-tied bright red silk tassels',
+      'Pairs seamlessly with plain silk kurtas or evening separates',
       'Estimated crafting timeframe: 2–3 weeks'
     ]
   },
   {
     id: 'prod-30',
-    name: 'Marquise Hand-Embroidered Silk Top',
+    name: 'Kalyani Rust & Gold Brocade Silk Saree',
     category: 'artisanal-craft',
     categoryName: 'Artisanal Craft',
     price: '₹11,000',
-    badge: 'Hand Zardozi',
+    badge: 'Heritage Brocade',
     images: [
       'assets/images/product-15.webp',
-      'assets/images/hero-02.webp',
-      'assets/images/product-16.webp'
+      'assets/images/product-02.webp',
+      'assets/images/product-26.webp'
     ],
-    description: '(Sample specification) Intricate bullion wire zardozi embroidery with micro pearl enhancements on raw silk, meticulously handcrafted by our master artisans.',
-    fabric: 'Pure Mulberry Raw Silk & Gold Bullion Wires',
-    work: 'Authentic Frame Zardozi, French Knots & Seed Pearls',
+    description: 'Close-up heritage weave showcasing a scalloped antique gold brocade pallu woven onto luminous rust-orange pure silk with a contrasting maroon selvedge.',
+    fabric: 'Pure Handloom Silk & Antique Gold Zari',
+    work: 'Dense Scalloped Brocade Pallu Weave',
     details: [
-      'Pure metal bullion wires that retain their rich luster over decades',
-      'Tailored with premium inner lining for complete comfort against skin',
-      'Padded bust cups and side zip fastening for a sculpted fit',
-      'Color can be customized to match any client fabric swatch',
+      'Intricate repeating scalloped arch motif in antique gold zari',
+      'Crisp contrasting maroon border framing the woven brocade',
+      'Pure silk drape with lightweight fluidity and luminous sheen',
+      'Includes matching unstitched silk blouse fabric',
       'Estimated crafting timeframe: 2 weeks'
     ]
   },
   {
     id: 'prod-31',
-    name: 'Artisanal Wire-Embroidered Vest',
+    name: 'Zardozi Olive & Maroon Bridal Lehenga',
     category: 'artisanal-craft',
     categoryName: 'Artisanal Craft',
     price: '₹13,500',
     badge: 'Master Craft',
     images: [
       'assets/images/product-16.webp',
-      'assets/images/story-03.webp'
+      'assets/images/product-08.webp',
+      'assets/images/collection-04.webp'
     ],
-    description: '(Sample specification) Signature artisan-crafted waistcoat featuring dimensional zardozi wire embroidery, micro seed pearls, and hand-cut metallic borders.',
-    fabric: 'Pure Silk Canvas & Metallic Gilt Threads',
-    work: 'Master Adda Embroidery with Raised 3D Threadwork',
+    description: 'Intricately hand-worked olive-green and maroon velvet blouse paired with a deep maroon skirt embroidered in antique gold chevron zari and floral motifs.',
+    fabric: 'Micro-Velvet & Heavy Silk',
+    work: 'Hand-Embroidered Zardozi, Sequins & Chevron Bullion Work',
     details: [
-      'Showcases the apex of traditional artisanal hand embroidery',
-      'Directly worked on heritage wooden embroidery frames',
+      'Dense multi-stitch zardozi, sequin, and resham embroidery on bodice',
+      'Precision chevron gold work transitioning into diamond botanical panels',
       'Tailored exclusively to individual body measurements',
-      'Custom monogram embroidery option included',
-      'Estimated crafting timeframe: 2–3 weeks'
+      'Includes custom blouse fitting session',
+      'Estimated crafting timeframe: 3–4 weeks'
     ]
   },
   {
     id: 'prod-32',
-    name: 'Made-to-Measure Atelier Silhouette',
+    name: 'Kashida Hand-Embroidered Organza Border',
     category: 'artisanal-craft',
     categoryName: 'Artisanal Craft',
     price: 'Price on Request',
     badge: 'Bespoke Atelier',
     images: [
       'assets/images/story-03.webp',
-      'assets/images/product-16.webp'
+      'assets/images/collection-07.webp',
+      'assets/images/social-01.webp'
     ],
-    description: '(Sample specification) Bespoke one-on-one couture service, from custom concept sketching to personalized fabric sourcing, embroidery design, and private fittings.',
-    fabric: 'Curated Silks, Fine Laces & Exclusive Handloom Weaves',
-    work: 'Custom Bespoke Development, Personalized Silhouette & Embroidery',
+    description: 'Macro craft study of our cream sheer organza border featuring layered crimson, lavender, and leaf-green floral needlework finished with hand-tied red tassels.',
+    fabric: 'Pure Sheer Silk Organza',
+    work: 'Artisanal Multicolor Floral Threadwork & Tassel Edging',
     details: [
-      'Initial 1-on-1 design consultation with our head stylist',
-      'Custom conceptual sketches and moodboard development',
-      'Personalized fabric swatching and exclusive embroidery sampling',
-      'Two progressive fitting sessions before final dispatch',
-      'Lead time: 4–6 weeks (express booking available upon request)'
+      'Custom embroidery color palettes and border widths made to order',
+      'Fine hand-guided needlework on translucent silk organza',
+      'Hand-knotted tassel finishing in custom dye shades',
+      'Available as bespoke dupattas, stoles, or saree trims',
+      'Lead time: 3–4 weeks'
     ]
   },
 
@@ -758,46 +781,47 @@ const PRODUCTS = [
   // ==========================================
   {
     id: 'prod-33',
-    name: 'Signature Heritage Crimson Ensemble',
+    name: 'Signature Midnight Navy Embroidered Gown',
     category: 'signature-series',
     categoryName: 'Signature Series',
     price: '₹28,000',
     badge: 'Archive Edit',
     images: [
       'assets/images/product-17.webp',
-      'assets/images/collection-06.webp'
+      'assets/images/collection-03.webp'
     ],
-    description: '(Sample specification) Ornate crimson red flared ensemble and embroidered stole embodying timeless glamour with dual-tone antique gold zari and dense floral artistry.',
-    fabric: 'Heirloom Crimson Silk & Antique Gold Tissue',
-    work: 'Royal Archive Zari Brocade & Hand-Appliqued Borders',
+    description: 'Deep midnight navy full-skirted pleated anarkali gown enriched with antique gold floral embroidery across the bodice, cuffs, and tiered hem.',
+    fabric: 'Pure Mulberry Silk Crepe',
+    work: 'Signature Gold Botanical Embroidery & Knife-Pleated Hem',
     details: [
-      'Heritage archive design celebrating the inception of our couture line',
-      'Dual-tone antique zari creating deep dimensional shadows and shine',
-      'Comes with commemorative engraved brass archival tag',
+      'Rich midnight navy hue accented with fine metallic gold florals',
+      'Full-length sleeves with detailed embroidered cuffs',
+      'Deep knife-pleated lower ruffle for dramatic movement',
       'Private salon fitting session included at our flagship studio',
       'Estimated crafting timeframe: 3–4 weeks'
     ]
   },
   {
     id: 'prod-34',
-    name: 'Signature Royal Plum Silk Kurta',
+    name: 'Signature Royal Maroon Chevron Lehenga',
     category: 'signature-series',
     categoryName: 'Signature Series',
     price: '₹15,000',
     badge: 'Legacy Edition',
     images: [
       'assets/images/product-28.webp',
-      'assets/images/product-15.webp'
+      'assets/images/product-08.webp',
+      'assets/images/product-16.webp'
     ],
-    description: '(Sample specification) Rich purple silk kurta with intricate gold pinstripes and structured collar. Pure mulberry silk woven with antique gold zari motifs and border work.',
-    fabric: 'Pure Mulberry Silk & Antique Gold Zari Stripes',
-    work: 'Fine Warp-Striped Gold Zari Weave with Clean Tailoring',
+    description: 'Heirloom deep maroon and olive bridal lehenga choli encrusted with geometric gold chevron zari, sequin highlights, and dense botanical border panels.',
+    fabric: 'Plush Silk Velvet & Heavy Raw Silk',
+    work: 'Master Zardozi, Antique Gold Chevron & Mirror Accents',
     details: [
-      'Striking royal purple body woven with alternating gold pinstripes',
-      'Ideal for festive evenings, dinner galas, and celebratory receptions',
-      'Includes tailored designer trousers with gold border accent',
-      'Certified Silk Mark India authentication included',
-      'Estimated crafting timeframe: 2 weeks'
+      'Striking deep maroon lehenga with contrasting olive embroidered choli',
+      'Ideal for bridal ceremonies, receptions, and grand festive galas',
+      'Multi-layered skirt hem finished with architectural embroidery',
+      'Custom size tailoring and trial fitting included',
+      'Estimated crafting timeframe: 3–4 weeks'
     ]
   }
 ];
