@@ -5,7 +5,7 @@
  */
 
 const CATEGORIES = [
-  { slug: 'all', name: 'All Collections', desc: 'Complete contemporary fashion & bespoke apparel' },
+  { slug: 'all', name: 'All Collections', desc: 'Complete contemporary fashion & ready-to-wear apparel' },
   { slug: 'ethnic-wear', name: 'Ethnic Wear', desc: 'Handcrafted traditional silhouettes & festive weaves' },
   { slug: 'western-wear', name: 'Western Wear', desc: 'Tailored separates, dresses & modern silhouettes' },
   { slug: 'occasion-wear', name: 'Occasion Wear', desc: 'Statement ensembles & celebratory evening wear' },
@@ -35,7 +35,7 @@ const PRODUCTS = [
       "Pure handloom silk certified with Silk Mark authentication",
       "Self-woven brocade patterns across the ivory drape",
       "Includes matching red blouse fabric with gold zari sleeve border",
-      "Bespoke blouse fitting and sleeve customization available on request",
+      "Coordinated blouse fabric and styling guidance available on request",
       "Estimated crafting & delivery timeframe: 2\u20133 weeks"
     ]
   },
@@ -160,7 +160,7 @@ const PRODUCTS = [
       "assets/images/product-07.webp",
       "assets/images/story-01.webp"
     ],
-    "description": "House signature couture saree pairing rich crimson silk velvet and fluid emerald green georgette, embellished with handcrafted antique gold zardozi border work and matching embroidered blouse.",
+    "description": "House signature statement saree pairing rich crimson silk velvet and fluid emerald green georgette, embellished with handcrafted antique gold zardozi border work and matching embroidered blouse.",
     "fabric": "Silk Micro-Velvet, Flowing Georgette & Antique Zari",
     "work": "Micro-Velvet Border Appliqu\u00e9 with Hand Zardozi Embroidery",
     "details": [
@@ -453,7 +453,7 @@ const PRODUCTS = [
       "Wide sweetheart neckline paired with a matching embroidered choker",
       "Dramatic flared bell sleeves embroidered in antique gold florals",
       "Knife-pleated hemline tier adding fluid movement",
-      "Made-to-measure tailoring option included",
+      "Standard sizing with regular comfort fit",
       "Estimated crafting timeframe: 3 weeks"
     ]
   },
@@ -463,7 +463,7 @@ const PRODUCTS = [
     "category": "ethnic-wear",
     "categoryName": "Ethnic Wear",
     "price": "\u20b920,000",
-    "badge": "Festive Couture",
+    "badge": "Festive Edit",
     "images": [
       "assets/images/product-21.webp",
       "assets/images/product-25.webp"
@@ -534,7 +534,7 @@ const PRODUCTS = [
       "assets/images/product-24.webp",
       "assets/images/reel-poster-06.webp"
     ],
-    "description": "Couture evening ensemble showcasing a midnight teal silk flared maxi gown with intricate gold floral vine tilla embroidery, fitted bodice, and dramatic flared hemline.",
+    "description": "Evening ensemble showcasing a midnight teal silk flared maxi gown with intricate gold floral vine tilla embroidery, fitted bodice, and dramatic flared hemline.",
     "fabric": "Pure Silk Georgette & Bamberg Satin",
     "work": "Gold Tilla Needlework with Micro-Pleated Hem Finishing",
     "details": [
@@ -551,7 +551,7 @@ const PRODUCTS = [
     "category": "artisanal-craft",
     "categoryName": "Artisanal Craft",
     "price": "\u20b913,500",
-    "badge": "Atelier Favorite",
+    "badge": "Staff Favorite",
     "images": [
       "assets/images/product-25.webp",
       "assets/images/product-21.webp"
@@ -595,7 +595,7 @@ const PRODUCTS = [
     "category": "ethnic-wear",
     "categoryName": "Ethnic Wear",
     "price": "\u20b917,500",
-    "badge": "Couture Edit",
+    "badge": "Special Edit",
     "images": [
       "assets/images/product-27.webp",
       "assets/images/hero-01.webp"
@@ -705,7 +705,7 @@ const PRODUCTS = [
     "category": "ethnic-wear",
     "categoryName": "Ethnic Wear",
     "price": "Price on Request",
-    "badge": "Bespoke Atelier",
+    "badge": "Handcrafted",
     "images": [
       "assets/images/product-32.webp",
       "assets/images/product-12.webp"
@@ -717,7 +717,7 @@ const PRODUCTS = [
       "Custom embroidery color palettes and border widths made to order",
       "Fine hand-guided needlework on translucent silk organza",
       "Hand-knotted tassel finishing in custom dye shades",
-      "Available as bespoke dupattas, stoles, or saree trims",
+      "Available as finished dupattas, stoles, or saree trims",
       "Lead time: 3\u20134 weeks"
     ]
   },

@@ -298,7 +298,7 @@ function initWishlist() {
  */
 function initWhatsAppLinks() {
   window.openWhatsAppEnquiry = function(itemName) {
-    const text = encodeURIComponent(`Hi Your Brand, I am interested in ${itemName || 'a styling consultation'}. Please share details.`);
+    const text = encodeURIComponent(`Hi Your Brand, I am interested in ${itemName || 'this piece'}. Please share details.`);
     window.open(`https://wa.me/919000000000?text=${text}`, '_blank');
   };
 }

@@ -3824,7 +3824,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .reels-page-grid {
     grid-template-columns: 1fr;
     max-width: 290px;
@@ -3833,28 +3833,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   Footer
+   Site Footer (Modern Redesign)
    ========================================================================== */
 .site-footer {
   background-color: var(--primary);
   color: var(--on-primary);
-  padding: 72px 0 24px;
+  padding: 64px 0 100px;
   position: relative;
   border-top: 3px solid var(--accent);
+  overflow-x: hidden;
 }
 
+/* 1. CTA Band */
+.footer-cta-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 36px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-cta-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 500;
+  color: var(--on-primary);
+  letter-spacing: 0.5px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.footer-cta-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  background-color: var(--accent);
+  color: var(--primary);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: var(--radius-pill, 40px);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast, 0.25s), transform var(--transition-fast, 0.25s), box-shadow var(--transition-fast, 0.25s), color var(--transition-fast, 0.25s);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.footer-cta-wa-btn:hover {
+  background-color: var(--on-primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+.footer-cta-wa-btn svg {
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/* 2. Main 4-Column Grid */
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
   gap: 48px;
-  margin-bottom: 56px;
+  margin-bottom: 28px;
 }
 
-.footer-brand-wrap {
+/* Column 1: Brand */
+.footer-col-brand .footer-brand-wrap {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .footer-logo-badge {
@@ -3863,42 +3917,29 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--accent);
+  flex-shrink: 0;
 }
 
 .footer-brand-title {
   font-family: var(--font-serif);
-  font-size: 1.8rem;
+  font-size: 1.75rem;
+  font-weight: 600;
   color: var(--accent);
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   line-height: 1.1;
-}
-
-.footer-brand-sub {
-  font-size: 0.65rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-desc {
   font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 20px;
-  line-height: 1.7;
-}
-
-.footer-contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 14px;
+  line-height: 1.65;
 }
 
 .footer-address {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   line-height: 1.6;
 }
 
@@ -3909,55 +3950,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-social-icon-btn {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(var(--accent-rgb), 0.3);
+  background: transparent;
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: var(--on-primary);
-  transition: all var(--transition-fast);
-}
-
-.footer-social-icon-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: rgba(var(--accent-rgb), 0.15);
-  transform: translateY(-2px);
+  text-decoration: none;
+  transition: background-color var(--transition-fast, 0.25s), border-color var(--transition-fast, 0.25s), color var(--transition-fast, 0.25s), transform var(--transition-fast, 0.25s);
 }
 
 .footer-social-icon-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
-  transition: fill var(--transition-fast);
+  transition: fill var(--transition-fast, 0.25s);
+}
+
+.footer-social-icon-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--primary);
+  transform: translateY(-2px);
 }
 
 .footer-social-icon-btn:hover svg {
-  fill: var(--accent);
+  fill: var(--primary);
 }
 
-.footer-contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.footer-contact-item svg {
-  width: 18px;
-  height: 18px;
-  fill: var(--accent);
-  flex-shrink: 0;
-  margin-top: 3px;
-}
-
+/* Columns 2 & 3: Shop & Help */
 .footer-col-title {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: var(--accent);
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   position: relative;
   display: inline-block;
   letter-spacing: 0.5px;
@@ -3968,125 +3998,225 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: -6px;
   left: 0;
-  width: 28px;
+  width: 24px;
   height: 1.5px;
   background-color: var(--accent);
 }
 
 .footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 11px;
 }
 
 .footer-link {
-  font-size: 0.86rem;
+  font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.72);
-  transition: all var(--transition-fast);
+  text-decoration: none;
   display: inline-block;
+  transition: color var(--transition-fast, 0.25s), transform var(--transition-fast, 0.25s);
 }
 
 .footer-link:hover {
   color: var(--accent);
-  transform: translateX(4px);
+  transform: translateX(3px);
 }
 
-/* Newsletter Form */
-.newsletter-form {
+/* Column 4: Stay in Touch (Pill-shaped input with round arrow button) */
+.footer-newsletter-pill-form {
+  margin-top: 16px;
+}
+
+.footer-newsletter-pill {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.newsletter-input-group {
-  display: flex;
-  width: 100%;
-}
-
-.newsletter-input {
-  flex: 1;
-  padding: 12px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: none;
-  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  align-items: center;
   background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill, 40px);
+  padding: 4px 5px 4px 18px;
+  transition: border-color var(--transition-fast, 0.25s), background-color var(--transition-fast, 0.25s);
+}
+
+.footer-newsletter-pill:focus-within {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.footer-newsletter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
   color: var(--on-primary);
   font-family: inherit;
-  font-size: 0.85rem;
-  outline: none;
-  transition: background var(--transition-fast);
+  font-size: 0.88rem;
+  padding: 8px 0;
+  min-width: 0;
 }
 
-.newsletter-input:focus {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: var(--accent);
+.footer-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.newsletter-btn {
+.footer-newsletter-arrow-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
   background-color: var(--accent);
   color: var(--primary);
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 0 18px;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color var(--transition-fast, 0.25s), color var(--transition-fast, 0.25s), transform var(--transition-fast, 0.25s);
 }
 
-.newsletter-btn:hover {
+.footer-newsletter-arrow-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+}
+
+.footer-newsletter-arrow-btn:hover {
   background-color: var(--on-primary);
   color: var(--primary);
+  transform: translateX(2px);
 }
 
-.newsletter-disclaimer {
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
+/* 3. Giant Brand Wordmark Across the Bottom */
+.footer-wordmark-wrap {
+  width: 100%;
+  overflow: hidden;
+  margin: 12px 0 10px;
+  user-select: none;
+  pointer-events: none;
+  text-align: center;
 }
 
-/* Footer Bottom Bar */
+.footer-giant-wordmark {
+  font-family: var(--font-serif);
+  font-size: clamp(48px, 12vw, 200px);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(var(--accent-rgb), 0.08);
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* 4. Bottom Bar */
 .footer-bottom {
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-right: 90px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.6);
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.social-links-wrap {
+.footer-copyright {
+  margin: 0;
+}
+
+.footer-bottom-links {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 }
 
-.social-icon-link {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(var(--accent-rgb), 0.3);
-  display: flex;
+.footer-bottom-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color var(--transition-fast, 0.25s), transform var(--transition-fast, 0.25s);
+  display: inline-block;
+}
+
+.footer-bottom-link:hover {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+.footer-back-to-top {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  color: var(--on-primary);
-  transition: all var(--transition-fast);
+  gap: 4px;
 }
 
-.social-icon-link:hover {
-  background: var(--accent);
-  color: var(--primary);
-  transform: translateY(-2px);
+/* 5. Responsive Footer Rules */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 52px 0 100px;
+  }
+
+  .footer-cta-band {
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 24px;
+    margin-bottom: 22px;
+  }
+
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 2px 0;
+  }
 }
 
-.social-icon-link svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
+@media (max-width: 576px) {
+  .site-footer {
+    padding: 44px 0 110px;
+  }
+
+  .footer-cta-band {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+  }
+
+  .footer-cta-wa-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 16px;
+  }
+
+  .footer-giant-wordmark {
+    font-size: clamp(38px, 12vw, 160px);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-right: 80px;
+  }
+
+  .footer-bottom-links {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 /* ==========================================================================
@@ -4166,10 +4296,6 @@ h1, h2, h3, h4, h5, h6 {
    Responsive Adaptations
    ========================================================================== */
 @media (max-width: 1024px) {
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 36px;
-  }
   .collections-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -4227,7 +4353,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-tap-highlight-color: transparent;
   }
 
-  p, .footer-desc, .new-launch-desc, .trust-pillar-text, .testimonial-quote {
+  p, .new-launch-desc, .trust-pillar-text, .testimonial-quote {
     font-size: 15px !important;
   }
 
@@ -4732,52 +4858,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto !important;
   }
 
-  /* 12. Site Footer: 2-column links, full-width newsletter */
-  .footer-grid {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 32px 18px !important;
-  }
-
-  .footer-grid > div:first-child {
-    grid-column: 1 / -1 !important;
-  }
-
-  .footer-grid > div:last-child {
-    grid-column: 1 / -1 !important;
-  }
-
-  .footer-link {
-    display: inline-flex !important;
-    align-items: center !important;
-    min-height: 44px !important;
-    padding: 4px 0 !important;
-  }
-
-  .newsletter-input-group {
-    flex-direction: column !important;
-    gap: 10px !important;
-    width: 100% !important;
-  }
-
-  .newsletter-input {
-    width: 100% !important;
-    min-height: 48px !important;
-    box-sizing: border-box !important;
-  }
-
-  .newsletter-btn {
-    width: 100% !important;
-    min-height: 48px !important;
-    box-sizing: border-box !important;
-  }
-
-  .social-icon-link {
-    width: 44px !important;
-    height: 44px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
 
   /* 13. Floating WhatsApp: 52px, 16px + safe area */
   .floating-whatsapp {
